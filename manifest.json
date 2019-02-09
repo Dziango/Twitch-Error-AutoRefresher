@@ -1,5 +1,6 @@
 {
     "name": "Twitch AutoRefresher (Error #2000)",
+    "short_name": "TwitchReload",
     "version": "1.0.0",
     "manifest_version": 2,
     "description": "This extension will automatically refresh twitch stream whenever error #2000 occurs",
