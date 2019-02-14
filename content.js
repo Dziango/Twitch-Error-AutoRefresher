@@ -9,6 +9,9 @@ function FindError() {
   if (player.innerHTML.indexOf('Error') > -1) {
     chrome.runtime.sendMessage({ text: "Please refresh" });
   }
+  else {
+    return "ok";
+  }
 }
 
 function WaitForPlayer() {
@@ -17,11 +20,14 @@ function WaitForPlayer() {
     window.requestAnimationFrame(WaitForPlayer);
   }
   else {
-    observer.observe(player, {
-      childList: true,
-      subtree: true
-    });
-   }
+    FindError();
+      if (FindError() == "ok") {
+        observer.observe(player, {
+        childList: true,
+        subtree: true
+        });
+      }
+    }
 };
 
 WaitForPlayer()
