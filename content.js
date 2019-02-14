@@ -20,7 +20,6 @@ function WaitForPlayer() {
     window.requestAnimationFrame(WaitForPlayer);
   }
   else {
-    FindError();
       if (FindError() == "ok") {
         observer.observe(player, {
         childList: true,
