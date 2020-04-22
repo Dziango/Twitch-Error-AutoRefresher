@@ -12,7 +12,7 @@ var observer = new MutationObserver(function(mutations, observer) {
 var player = 0;
 
 function FindError() {
-  player = document.getElementById('default-player');
+  player = document.querySelector('.content-overlay-gate__content');
   if (player.innerHTML.indexOf('Error') > -1) {
     myBrowser.runtime.sendMessage({ text: "Please refresh" });
   }
@@ -22,7 +22,7 @@ function FindError() {
 }
 
 function WaitForPlayer() {
-  player = document.getElementById('default-player');
+  player = document.querySelector('.content-overlay-gate__content');
   if (player == null) {
     window.requestAnimationFrame(WaitForPlayer);
   }
