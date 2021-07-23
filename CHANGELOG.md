@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add a control panel where the user would decide on extension's behaviour in case of an error different than #2000.
 - [Optional] Add an option (in a control panel) to automatically collect channel points. 
 
-## [2.0.1] - 2021-07-22
+## [3.0.0] - 2021-07-23
 
 ### Changed
 - Changed how the extension determines whever there's an error in the player. With this change the extension is expected to work no matter the language settings on Twitch.
