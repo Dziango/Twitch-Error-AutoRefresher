@@ -12,7 +12,7 @@
     },
     "page_action": {
         "default_icon": "icon16.png",
-        "default_title": "Twitch AutoRefresher (Error #2000)"
+        "default_title": "Twitch Error AutoRefresher"
     },
     "content_scripts": [{
          "matches":[
@@ -21,5 +21,4 @@
          "run_at": "document_end",
          "js": ["content.js"]
       }],
-    "permissions": ["activeTab"]
 }
