@@ -2,7 +2,7 @@
     "name": "Twitch Error AutoRefresher",
     "short_name": "TwitchReload",
     "version": "4",
-    "manifest_version": 3,
+    "manifest_version": 2,
     "description": "This extension will automatically refresh twitch stream whenever any error occurs.",
     "icons": {
       "16": "icon16.png",
