@@ -3,6 +3,7 @@
     "short_name": "TwitchReload",
     "version": "4",
     "manifest_version": 2,
+    "homepage_url":"https://github.com/Dziango",
     "description": "This extension will automatically refresh twitch stream whenever any error occurs.",
     "icons": {
       "16": "icon16.png",
