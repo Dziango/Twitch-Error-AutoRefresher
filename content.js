@@ -4,7 +4,9 @@ handler = function () {
   );
   if (error_box) {
     if (error_box.innerText.search(/\#\d000/g)) {
-      error_box.querySelector("button").click();
+      if (error_box.querySelector("button")){
+        error_box.querySelector("button").click();
+      }
     }
   }
 };
