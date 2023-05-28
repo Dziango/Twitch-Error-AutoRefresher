@@ -17,7 +17,7 @@
     },
     "content_scripts": [{
          "matches":[
-            "*://*.twitch.tv/*"
+            "*://www.twitch.tv/*"
          ],
          "run_at": "document_idle",
          "js": ["content.js"]
