@@ -1,9 +1,10 @@
 {
-    "name": "Twitch AutoRefresher (Error #2000)",
+    "name": "Twitch Error AutoRefresher",
     "short_name": "TwitchReload",
-    "version": "3.0.1",
+    "version": "4",
     "manifest_version": 2,
-    "description": "This extension will automatically refresh twitch stream whenever error #2000 occurs.",
+    "homepage_url":"https://github.com/Dziango",
+    "description": "This extension will automatically refresh twitch stream whenever any error occurs.",
     "icons": {
       "16": "icon16.png",
       "32": "icon32.png",
@@ -12,15 +13,13 @@
     },
     "page_action": {
         "default_icon": "icon16.png",
-        "default_title": "Twitch AutoRefresher (Error #2000)"
-    },
-    "background": {
-        "scripts": ["background.js"]
+        "default_title": "Twitch Error AutoRefresher"
     },
     "content_scripts": [{
-         "matches":  ["*://*.ttvnw.net/*", "*://*.twitch.tv/*","*://*.twitchcdn.net/*"],
-         "run_at": "document_end",
+         "matches":[
+            "*://www.twitch.tv/*"
+         ],
+         "run_at": "document_idle",
          "js": ["content.js"]
-      }],
-    "permissions": ["activeTab"]
+      }]
 }
