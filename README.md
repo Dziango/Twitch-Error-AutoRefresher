@@ -1,4 +1,4 @@
-![Icon](https://github.com/Dziango/Twitch-Error-AutoRefresher/blob/master/icon48.png)
+![Icon](https://github.com/Dziango/Twitch-Error-AutoRefresher/blob/master/icon128.png)
 
 # Twitch Error AutoRefresher
 
