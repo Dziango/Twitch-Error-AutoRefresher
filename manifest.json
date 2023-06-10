@@ -11,10 +11,6 @@
       "48": "icon48.png",
       "128": "icon128.png"
     },
-    "page_action": {
-        "default_icon": "icon16.png",
-        "default_title": "Twitch Error AutoRefresher"
-    },
     "content_scripts": [{
          "matches":[
             "*://www.twitch.tv/*"
